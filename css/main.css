@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__row-content {
+  padding: 35px 0;
+  width: 35vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.8))), url("../img/bg_contact.png") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("../img/bg_contact.png") no-repeat;
+}
+
+.contact__row-content .row .address span {
+  display: block;
+  font-size: 20px;
+}
+
+.contact__row-content .row h4 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 20px 0;
+}
+
+.contact__row-content .reception {
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 300px;
+  border: 1px solid #ffffff;
+}
+
+.contact__row-content .reception .title {
+  letter-spacing: 10px;
+  padding-bottom: 15px;
+  text-decoration: underline;
+}
+
+.contact__row-content .reception .address span {
+  display: block;
+  font-size: 20px;
+}
+
+.contact__row-newsletter {
+  padding: 35px 0;
+  width: 65vw;
+  background-color: #000000;
+}
+
+.contact__row-newsletter p {
+  padding: 35px 0;
+}
+
+.contact__row-newsletter form .row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+
+.contact__row-newsletter form .row-1 input {
+  margin-right: 15px;
+}
+
+.contact__row-newsletter form .row-1 button {
+  background-color: #6d1c1c;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-weight: 800;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.contact__row-newsletter form .row-1 button:hover {
+  color: black;
+}
+
+.contact__map iframe {
+  width: 100%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 35px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #444;
+}
+
+.footer__social-icons a img {
+  width: 35px;
+  height: 35px;
+  margin: 20px 25px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer__social-icons a img:hover {
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+}
+/*# sourceMappingURL=main.css.map */
