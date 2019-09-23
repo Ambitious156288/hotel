@@ -73,7 +73,7 @@ body {
             & h2 {}
 
             & p {
-                padding:35px 0; 
+                padding: 35px 0;
             }
 
             & form {
@@ -146,9 +146,14 @@ body {
     }
 
     &__top-btn {
+        background-color: transparent;
+        border: none;
+
         & a {
 
-            & img {}
+            & img {
+
+            }
         }
     }
 }

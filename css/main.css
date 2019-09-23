@@ -141,4 +141,9 @@ body {
   border-left: 1px solid red;
   border-right: 1px solid red;
 }
+
+.footer__top-btn {
+  background-color: transparent;
+  border: none;
+}
 /*# sourceMappingURL=main.css.map */
