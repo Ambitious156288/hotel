@@ -16,14 +16,12 @@ body {
     background-color: black;
 }
 
-
 .header {
     &__slider {
         width: 100%;
         height: 100vh;
         position: relative;
         overflow: hidden;
-        z-index: -1;
 
         &-img {
             position: absolute;
@@ -69,31 +67,78 @@ body {
     }
 
     &__nav {
-        padding: 5px 10px;
-        display: flex;
-        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
 
-        &-language {
-            letter-spacing: 2px;
-            padding: 4px;
+        & ul {
+            background: gray;
+            list-style: none;
+            width: 100%;
         }
 
-        &-menu {
-            display: flex;
-            padding-left: 25%;
-            font-weight: 800;
-            list-style-type: none;
+        & li {
+            float: left;
+            position: relative;
+            width: auto;
 
-            & a {
-                padding: 5px;
-                margin-left: 20px;
-                text-decoration: none;
+            &:hover {
+                & a {
+                    background: #000000;
+                }
 
-                & li {
-                    color: white;
+                & #submenu {
+                    opacity: 1;
+                    top: 40px;
+                    /* adjust this as per top nav padding top & bottom comes */
+                    visibility: visible;
                 }
             }
+        }
 
+        & a {
+            background: #30A6E6;
+            color: #FFFFFF;
+            display: block;
+            font: bold 12px/20px sans-serif;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            transition: all .25s ease;
+        }
+
+        & #submenu {
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 35px;
+            visibility: hidden;
+            z-index: 1;
+
+            & li {
+                float: none;
+                width: 100%;
+            }
+
+            & a {
+                background-color: #000000;
+
+                &:hover {
+                    background: #DF4B05;
+                }
+            }
+        }
+    }
+
+    &__language{
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        letter-spacing: 2px;
+        padding: 4px;
+
+        &:hover{
+            cursor: pointer;
         }
     }
 
@@ -361,3 +406,4 @@ body {
         border: none;
     }
 }
+
