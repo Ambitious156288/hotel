@@ -7,12 +7,235 @@
 
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   color: #ffffff;
+  background-color: black;
+}
+
+.header__slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.header__slider-img {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.6;
+}
+
+.header__slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-family: tahoma, sans-serif;
+  text-shadow: 0 0 6px white;
+}
+
+.header__slider-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header__slider-dots span {
+  display: inline-block;
+  background-color: #000;
+  margin: 0 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 5px white;
+          box-shadow: 0 0 0 5px white;
+}
+
+.header__slider-dots span.active {
+  -webkit-box-shadow: 0 0 0 5px white, 0 0 3px 10px red;
+          box-shadow: 0 0 0 5px white, 0 0 3px 10px red;
+}
+
+.header__nav {
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.header__nav-language {
+  letter-spacing: 2px;
+  padding: 4px;
+}
+
+.header__nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 25%;
+  font-weight: 800;
+  list-style-type: none;
+}
+
+.header__nav-menu a {
+  padding: 5px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.header__nav-menu a li {
+  color: white;
+}
+
+.header__rating {
+  position: relative;
+  top: 75vh;
+  left: 2vw;
+  padding: 50px;
+  width: 56px;
+  height: 56px;
+  font-weight: 600;
+  border: 1px solid #ffffff;
+  background-color: rgba(19, 90, 78, 0.863);
+}
+
+.header__rating p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.rooms {
+  color: #ffffff;
+  background: url("../img/bg_rooms.png") left no-repeat;
+  height: 80vh;
+  width: 100%;
+  padding: 100px;
+}
+
+.rooms__content {
+  padding: 30px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: left;
+  width: 40vw;
+}
+
+.rooms__content-title {
+  font-size: 50px;
+  padding: 50px;
+  letter-spacing: 7px;
+}
+
+.rooms__content-content {
+  font-size: 17px;
+  padding: 0 50px 20px 50px;
+  line-height: 30px;
+}
+
+.rooms__content-btn {
+  margin-left: 60%;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 30px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.rooms__content-btn:hover {
+  color: red;
+}
+
+.localization {
+  color: #ffffff;
+  background: url("../img/bg_localization.png") left no-repeat;
+  height: 80vh;
+  width: 100%;
+  padding: 100px 100px 100px 50%;
+}
+
+.localization__content {
+  padding: 30px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: left;
+  width: 40vw;
+}
+
+.localization__content-title {
+  font-size: 50px;
+  padding: 50px;
+  letter-spacing: 7px;
+}
+
+.localization__content-content {
+  font-size: 17px;
+  padding: 0 50px 20px 50px;
+  line-height: 30px;
+}
+
+.localization__content-btn {
+  margin-left: 60%;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 30px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.localization__content-btn:hover {
+  color: red;
+}
+
+.relax {
+  color: #ffffff;
+  background: url("../img/bg_relax.png") left no-repeat;
+  height: 80vh;
+  width: 100%;
+  padding: 100px;
+}
+
+.relax__content {
+  padding: 30px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: left;
+  width: 40vw;
+}
+
+.relax__content-title {
+  font-size: 50px;
+  padding: 50px;
+  letter-spacing: 7px;
+}
+
+.relax__content-content {
+  font-size: 17px;
+  padding: 0 50px 20px 50px;
+  line-height: 30px;
 }
 
 .contact {
