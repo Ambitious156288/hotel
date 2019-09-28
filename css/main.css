@@ -97,15 +97,14 @@ body {
 .header__nav li:hover #submenu {
   opacity: 1;
   top: 40px;
-  /* adjust this as per top nav padding top & bottom comes */
   visibility: visible;
 }
 
 .header__nav a {
+  font-size: 17px;
   background: #30A6E6;
   color: #FFFFFF;
   display: block;
-  font: bold 12px/20px sans-serif;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
@@ -147,9 +146,53 @@ body {
   cursor: pointer;
 }
 
+.header__reservation {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  border: 1px solid red;
+}
+
+.header__reservation button {
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  border: 3px solid black;
+  width: 270px;
+  height: 100px;
+  background-color: #be2020;
+  font-size: 30px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.header__reservation button span {
+  display: block;
+  line-height: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.header__reservation button span:last-child {
+  top: -100px;
+  left: 360px;
+}
+
+.header__reservation button:hover span:first-child {
+  left: -360px;
+}
+
+.header__reservation button:hover span:last-child {
+  left: 0;
+}
+
 .header__rating {
   position: relative;
-  top: 75vh;
+  top: 75%;
   left: 2vw;
   padding: 50px;
   width: 56px;
@@ -411,5 +454,152 @@ body {
 .footer__top-btn {
   background-color: transparent;
   border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav {
+    left: 80%;
+    background-color: #30A6E6;
+  }
+  .header__reservation {
+    opacity: 0;
+  }
+  .header__rating {
+    top: 65%;
+    left: 50%;
+  }
+  .rooms {
+    padding: 10px;
+  }
+  .rooms__content {
+    width: 90vw;
+  }
+  .rooms__content-title {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .rooms__content-content {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .rooms__content-btn {
+    font-size: 15px;
+  }
+  .localization {
+    padding: 10px;
+  }
+  .localization__content {
+    width: 90vw;
+  }
+  .localization__content-title {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .localization__content-content {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .localization__content-btn {
+    font-size: 15px;
+  }
+  .relax {
+    color: #ffffff;
+    background: url("../img/bg_relax.png") left no-repeat;
+    height: 80vh;
+    width: 100%;
+  }
+  .relax__content {
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 80vw;
+  }
+  .relax__content-title {
+    font-size: 20px;
+  }
+  .relax__content-content {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__row-content {
+    padding: 35px 0;
+    width: 35vw;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.8))), url("../img/bg_contact.png") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("../img/bg_contact.png") no-repeat;
+  }
+  .contact__row-content .row .address span {
+    display: block;
+    font-size: 20px;
+  }
+  .contact__row-content .row h4 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 20px 0;
+  }
+  .contact__row-content .reception {
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 300px;
+    border: 1px solid #ffffff;
+  }
+  .contact__row-content .reception .title {
+    letter-spacing: 10px;
+    padding-bottom: 15px;
+    text-decoration: underline;
+  }
+  .contact__row-content .reception .address span {
+    display: block;
+    font-size: 20px;
+  }
+  .contact__row-newsletter {
+    padding: 35px 0;
+    width: 65vw;
+    background-color: #000000;
+  }
+  .contact__row-newsletter p {
+    padding: 35px 0;
+  }
+  .contact__row-newsletter form .row-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 30px;
+  }
+  .contact__row-newsletter form .row-1 input {
+    margin-right: 15px;
+  }
+  .contact__row-newsletter form .row-1 button {
+    background-color: #6d1c1c;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-weight: 800;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .contact__row-newsletter form .row-1 button:hover {
+    color: black;
+  }
 }
 /*# sourceMappingURL=main.css.map */

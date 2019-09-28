@@ -1,0 +1,185 @@
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1025px) {}
+
+@media screen and (max-width: 767px) {
+    .header {
+        &__slider {}
+
+        &__nav {
+            left: 80%;
+            background-color: #30A6E6;
+        }
+
+        &__reservation {
+            opacity: 0;
+        }
+
+        &__rating {
+            top: 65%;
+            left: 50%;
+        }
+    }
+
+    .rooms {
+        padding: 10px;
+
+        &__content {
+            width: 90vw;
+
+            &-title {
+                font-size: 20px;
+                padding: 20px;
+            }
+
+            &-content {
+                font-size: 14px;
+                line-height: 15px;
+            }
+
+            &-btn {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .localization {
+        padding: 10px;
+
+
+        &__content {
+            width: 90vw;
+
+            &-title {
+                font-size: 20px;
+                padding: 20px;
+            }
+
+            &-content {
+                font-size: 14px;
+                line-height: 15px;
+            }
+
+            &-btn {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .relax {
+        color: #ffffff;
+        background: url("../img/bg_relax.png") left no-repeat;
+        height: 80vh;
+        width: 100%;
+        // padding: 100px;
+
+        &__content {
+            // padding: 30px 10px;
+            background-color: rgba(0, 0, 0, .4);
+            text-align: center;
+            width: 80vw;
+
+            &-title {
+                font-size: 20px;
+                // padding: 50px;
+                // letter-spacing: 7px;
+            }
+
+            &-content {
+                font-size: 13px;
+                // padding: 0 50px 20px 50px;
+                line-height: 15px;
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+
+        &__row {
+            display: flex;
+            flex-direction: column;
+
+            &-content {
+                padding: 35px 0;
+                width: 35vw;
+                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("../img/bg_contact.png") no-repeat;
+
+                & .row {
+                    & .address {
+
+                        & span {
+                            display: block;
+                            font-size: 20px;
+                        }
+                    }
+
+                    & h4 {
+                        font-size: 25px;
+                        letter-spacing: 2px;
+                        padding: 20px 0;
+                    }
+                }
+
+                & .reception {
+                    padding: 20px 0;
+                    margin: 0 auto;
+                    width: 300px;
+                    border: 1px solid #ffffff;
+
+                    & .title {
+                        letter-spacing: 10px;
+                        padding-bottom: 15px;
+                        text-decoration: underline;
+                    }
+
+                    & .address {
+                        & span {
+                            display: block;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            &-newsletter {
+                padding: 35px 0;
+                width: 65vw;
+                background-color: #000000;
+
+                & p {
+                    padding: 35px 0;
+                }
+
+                & form {
+                    & .row-1 {
+                        display: flex;
+                        justify-content: center;
+                        padding-bottom: 30px;
+
+                        & input {
+                            margin-right: 15px;
+                        }
+
+                        & button {
+                            background-color: rgb(109, 28, 28);
+                            padding: 10px 30px;
+                            color: #ffffff;
+                            font-weight: 800;
+                            border: 1px solid #ffffff;
+                            cursor: pointer;
+                            transition: .4s;
+
+                            &:hover {
+                                color: black;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}

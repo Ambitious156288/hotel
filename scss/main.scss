@@ -69,7 +69,7 @@ body {
     &__nav {
         position: absolute;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
 
         & ul {
             background: gray;
@@ -90,17 +90,16 @@ body {
                 & #submenu {
                     opacity: 1;
                     top: 40px;
-                    /* adjust this as per top nav padding top & bottom comes */
                     visibility: visible;
                 }
             }
         }
 
         & a {
+            font-size: 17px;
             background: #30A6E6;
             color: #FFFFFF;
             display: block;
-            font: bold 12px/20px sans-serif;
             padding: 10px 25px;
             text-align: center;
             text-decoration: none;
@@ -130,21 +129,66 @@ body {
         }
     }
 
-    &__language{
+    &__language {
         position: absolute;
         top: 2%;
         left: 2%;
         letter-spacing: 2px;
         padding: 4px;
 
-        &:hover{
+        &:hover {
             cursor: pointer;
+        }
+    }
+
+    &__reservation {
+        position: absolute;
+        top: 30%;
+        right: 0;
+        // padding: 30px 100px 30px 30px;
+        border: 1px solid red;
+
+
+        & button {
+            position: absolute;
+            top: 30%;
+            right: 0%;
+            border: 3px solid black;
+            width: 270px;
+            height: 100px;
+            background-color: rgb(190, 32, 32);
+            font-size: 30px;
+            text-transform: uppercase;
+            overflow: hidden;
+            cursor: pointer;
+
+            & span {
+                display: block;
+                line-height: 100px;
+                position: relative;
+                top: 0;
+                left: 0;
+                transition: .2s linear;
+            }
+
+            & span:last-child {
+                top: -100px;
+                left: 360px;
+            }
+
+            &:hover span:first-child {
+                left: -360px;
+            }
+
+            &:hover span:last-child {
+                left: 0;
+            }
         }
     }
 
     &__rating {
         position: relative;
-        top: 75vh;
+        top: 75%;
         left: 2vw;
         padding: 50px;
         width: 56px;
@@ -161,8 +205,8 @@ body {
             font-size: 20px;
         }
     }
-
 }
+
 
 
 .rooms {
@@ -407,3 +451,4 @@ body {
     }
 }
 
+@import 'rwd';
