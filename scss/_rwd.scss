@@ -1,11 +1,5 @@
-@media screen and (max-width: 1500px) {}
-
-@media screen and (max-width: 1025px) {}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
     .header {
-        &__slider {}
-
         &__nav {
             left: 80%;
             background-color: #30A6E6;
@@ -18,168 +12,207 @@
         &__rating {
             top: 65%;
             left: 50%;
+            transform: translate(-50%, 0);
         }
     }
 
-    .rooms {
-        padding: 10px;
-
-        &__content {
-            width: 90vw;
-
-            &-title {
-                font-size: 20px;
-                padding: 20px;
-            }
-
-            &-content {
-                font-size: 14px;
-                line-height: 15px;
-            }
-
-            &-btn {
-                font-size: 15px;
-            }
-        }
-    }
-
+    .rooms,
     .localization {
         padding: 10px;
 
-
         &__content {
             width: 90vw;
 
             &-title {
-                font-size: 20px;
+                font-size: 25px;
                 padding: 20px;
             }
 
             &-content {
-                font-size: 14px;
-                line-height: 15px;
+                font-size: 15px;
+                line-height: 25px;
             }
 
             &-btn {
-                font-size: 15px;
+                font-size: 12px;
             }
         }
     }
 
     .relax {
-        color: #ffffff;
-        background: url("../img/bg_relax.png") left no-repeat;
-        height: 80vh;
-        width: 100%;
-        // padding: 100px;
+        padding: 10px;
 
         &__content {
-            // padding: 30px 10px;
-            background-color: rgba(0, 0, 0, .4);
-            text-align: center;
-            width: 80vw;
+            width: 90vw;
 
             &-title {
-                font-size: 20px;
-                // padding: 50px;
-                // letter-spacing: 7px;
+                font-size: 25px;
+                padding: 20px;
             }
 
             &-content {
-                font-size: 13px;
-                // padding: 0 50px 20px 50px;
-                line-height: 15px;
+                font-size: 15px;
+                line-height: 25px;
             }
         }
     }
 
     .contact {
-        display: flex;
-        flex-direction: column;
 
         &__row {
-            display: flex;
             flex-direction: column;
 
             &-content {
-                padding: 35px 0;
-                width: 35vw;
-                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("../img/bg_contact.png") no-repeat;
-
-                & .row {
-                    & .address {
-
-                        & span {
-                            display: block;
-                            font-size: 20px;
-                        }
-                    }
-
-                    & h4 {
-                        font-size: 25px;
-                        letter-spacing: 2px;
-                        padding: 20px 0;
-                    }
-                }
-
-                & .reception {
-                    padding: 20px 0;
-                    margin: 0 auto;
-                    width: 300px;
-                    border: 1px solid #ffffff;
-
-                    & .title {
-                        letter-spacing: 10px;
-                        padding-bottom: 15px;
-                        text-decoration: underline;
-                    }
-
-                    & .address {
-                        & span {
-                            display: block;
-                            font-size: 20px;
-                        }
-                    }
-                }
+                width: 100vw;
             }
 
             &-newsletter {
-                padding: 35px 0;
-                width: 65vw;
-                background-color: #000000;
+                width: 100vw;
+            }
+        }
+    }
+}
 
-                & p {
-                    padding: 35px 0;
-                }
+@media screen and (min-width: 1024px) {
+    .header {
+        &__slider {
+            &-text {
+                font-size: 50px;
+            }
+        }
 
-                & form {
-                    & .row-1 {
-                        display: flex;
-                        justify-content: center;
-                        padding-bottom: 30px;
+        &__nav {
+            display: block;
 
-                        & input {
-                            margin-right: 15px;
-                        }
+            & a {
+                font-size: 40px;
+            }
+        }
 
-                        & button {
-                            background-color: rgb(109, 28, 28);
-                            padding: 10px 30px;
-                            color: #ffffff;
-                            font-weight: 800;
-                            border: 1px solid #ffffff;
-                            cursor: pointer;
-                            transition: .4s;
+        &__reservation {
+            opacity: 1;
+            top: 50%;
+        }
 
-                            &:hover {
-                                color: black;
-                            }
-                        }
-                    }
+        &__language {
+            font-size: 20px;
+        }
 
-                }
+        &__rating {
+            padding: 70px;
+
+            & p {
+                font-size: 30px;
             }
         }
     }
 
+    .rooms,
+    .localization {
+        padding: 50px;
+
+        &__content {
+            width: 70vw;
+
+            &-title {
+                font-size: 55px;
+                padding: 50px;
+            }
+
+            &-content {
+                font-size: 25px;
+                line-height: 55px;
+            }
+
+            &-btn {
+                font-size: 22px;
+            }
+        }
+    }
+
+    .relax {
+        padding: 50px;
+
+        &__content {
+            width: 70vw;
+
+            &-title {
+                font-size: 55px;
+                padding: 50px;
+            }
+
+            &-content {
+                font-size: 25px;
+                line-height: 55px;
+            }
+        }
+    }
+
+    .contact {
+
+        &__row {
+            flex-direction: column;
+
+            &-content {
+                width: 100vw;
+                font-size: 1.8rem;
+            }
+
+            &-newsletter {
+                width: 100vw;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+
+        &__nav {
+            width: 70%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            margin-left: 40px;
+            background: none;
+
+            & a {
+                font-size: 26px;
+            }
+        }
+
+        &__rating {
+            padding: 60px;
+
+            & p {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .contact {
+        &__row {
+            flex-direction: row;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        &__nav {
+            width: 60%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            margin-left: 40px;
+            background: none;
+
+        }
+    }
 }

@@ -18,9 +18,9 @@ body {
 }
 
 .header__slider {
+  position: relative;
   width: 100%;
   height: 100vh;
-  position: relative;
   overflow: hidden;
 }
 
@@ -456,7 +456,7 @@ body {
   border: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .header__nav {
     left: 80%;
     background-color: #30A6E6;
@@ -467,139 +467,173 @@ body {
   .header__rating {
     top: 65%;
     left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
-  .rooms {
-    padding: 10px;
-  }
-  .rooms__content {
-    width: 90vw;
-  }
-  .rooms__content-title {
-    font-size: 20px;
-    padding: 20px;
-  }
-  .rooms__content-content {
-    font-size: 14px;
-    line-height: 15px;
-  }
-  .rooms__content-btn {
-    font-size: 15px;
-  }
+  .rooms,
   .localization {
     padding: 10px;
   }
+  .rooms__content,
   .localization__content {
     width: 90vw;
   }
+  .rooms__content-title,
   .localization__content-title {
-    font-size: 20px;
+    font-size: 25px;
     padding: 20px;
   }
+  .rooms__content-content,
   .localization__content-content {
-    font-size: 14px;
-    line-height: 15px;
-  }
-  .localization__content-btn {
     font-size: 15px;
+    line-height: 25px;
+  }
+  .rooms__content-btn,
+  .localization__content-btn {
+    font-size: 12px;
   }
   .relax {
-    color: #ffffff;
-    background: url("../img/bg_relax.png") left no-repeat;
-    height: 80vh;
-    width: 100%;
+    padding: 10px;
   }
   .relax__content {
-    background-color: rgba(0, 0, 0, 0.4);
-    text-align: center;
-    width: 80vw;
+    width: 90vw;
   }
   .relax__content-title {
-    font-size: 20px;
+    font-size: 25px;
+    padding: 20px;
   }
   .relax__content-content {
-    font-size: 13px;
-    line-height: 15px;
-  }
-  .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    font-size: 15px;
+    line-height: 25px;
   }
   .contact__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .contact__row-content {
-    padding: 35px 0;
-    width: 35vw;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.8))), url("../img/bg_contact.png") no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("../img/bg_contact.png") no-repeat;
-  }
-  .contact__row-content .row .address span {
-    display: block;
-    font-size: 20px;
-  }
-  .contact__row-content .row h4 {
-    font-size: 25px;
-    letter-spacing: 2px;
-    padding: 20px 0;
-  }
-  .contact__row-content .reception {
-    padding: 20px 0;
-    margin: 0 auto;
-    width: 300px;
-    border: 1px solid #ffffff;
-  }
-  .contact__row-content .reception .title {
-    letter-spacing: 10px;
-    padding-bottom: 15px;
-    text-decoration: underline;
-  }
-  .contact__row-content .reception .address span {
-    display: block;
-    font-size: 20px;
+    width: 100vw;
   }
   .contact__row-newsletter {
-    padding: 35px 0;
-    width: 65vw;
-    background-color: #000000;
+    width: 100vw;
   }
-  .contact__row-newsletter p {
-    padding: 35px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__slider-text {
+    font-size: 50px;
   }
-  .contact__row-newsletter form .row-1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 30px;
+  .header__nav {
+    display: block;
   }
-  .contact__row-newsletter form .row-1 input {
-    margin-right: 15px;
+  .header__nav a {
+    font-size: 40px;
   }
-  .contact__row-newsletter form .row-1 button {
-    background-color: #6d1c1c;
-    padding: 10px 30px;
-    color: #ffffff;
-    font-weight: 800;
-    border: 1px solid #ffffff;
-    cursor: pointer;
-    -webkit-transition: .4s;
-    transition: .4s;
+  .header__reservation {
+    opacity: 1;
+    top: 50%;
   }
-  .contact__row-newsletter form .row-1 button:hover {
-    color: black;
+  .header__language {
+    font-size: 20px;
+  }
+  .header__rating {
+    padding: 70px;
+  }
+  .header__rating p {
+    font-size: 30px;
+  }
+  .rooms,
+  .localization {
+    padding: 50px;
+  }
+  .rooms__content,
+  .localization__content {
+    width: 70vw;
+  }
+  .rooms__content-title,
+  .localization__content-title {
+    font-size: 55px;
+    padding: 50px;
+  }
+  .rooms__content-content,
+  .localization__content-content {
+    font-size: 25px;
+    line-height: 55px;
+  }
+  .rooms__content-btn,
+  .localization__content-btn {
+    font-size: 22px;
+  }
+  .relax {
+    padding: 50px;
+  }
+  .relax__content {
+    width: 70vw;
+  }
+  .relax__content-title {
+    font-size: 55px;
+    padding: 50px;
+  }
+  .relax__content-content {
+    font-size: 25px;
+    line-height: 55px;
+  }
+  .contact__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__row-content {
+    width: 100vw;
+    font-size: 1.8rem;
+  }
+  .contact__row-newsletter {
+    width: 100vw;
+    font-size: 1.5rem;
+  }
+  .footer {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-left: 40px;
+    background: none;
+  }
+  .header__nav a {
+    font-size: 26px;
+  }
+  .header__rating {
+    padding: 60px;
+  }
+  .header__rating p {
+    font-size: 25px;
+  }
+  .contact__row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header__nav {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-left: 40px;
+    background: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

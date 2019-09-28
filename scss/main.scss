@@ -18,9 +18,9 @@ body {
 
 .header {
     &__slider {
+        position: relative;
         width: 100%;
         height: 100vh;
-        position: relative;
         overflow: hidden;
 
         &-img {
@@ -145,7 +145,6 @@ body {
         position: absolute;
         top: 30%;
         right: 0;
-        // padding: 30px 100px 30px 30px;
         border: 1px solid red;
 
 
@@ -263,7 +262,7 @@ body {
     &__content {
         padding: 30px 10px;
         background-color: rgba(0, 0, 0, .4);
-        text-align: left;
+        text-align: left; 
         width: 40vw;
 
         &-title {
