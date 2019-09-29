@@ -43,7 +43,6 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 40px;
-  font-family: tahoma, sans-serif;
   text-shadow: 0 0 6px white;
 }
 
@@ -87,7 +86,6 @@ body {
 .header__nav li {
   float: left;
   position: relative;
-  width: auto;
 }
 
 .header__nav li:hover a {
@@ -96,8 +94,7 @@ body {
 
 .header__nav li:hover #submenu {
   opacity: 1;
-  top: 40px;
-  visibility: visible;
+  top: 50px;
 }
 
 .header__nav a {
@@ -117,7 +114,6 @@ body {
   opacity: 0;
   position: absolute;
   top: 35px;
-  visibility: hidden;
   z-index: 1;
 }
 
