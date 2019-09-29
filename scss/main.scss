@@ -40,7 +40,6 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 40px;
-            font-family: tahoma, sans-serif;
             text-shadow: 0 0 6px white;
         }
 
@@ -80,7 +79,6 @@ body {
         & li {
             float: left;
             position: relative;
-            width: auto;
 
             &:hover {
                 & a {
@@ -89,8 +87,7 @@ body {
 
                 & #submenu {
                     opacity: 1;
-                    top: 40px;
-                    visibility: visible;
+                    top: 50px;
                 }
             }
         }
@@ -111,7 +108,6 @@ body {
             opacity: 0;
             position: absolute;
             top: 35px;
-            visibility: hidden;
             z-index: 1;
 
             & li {
